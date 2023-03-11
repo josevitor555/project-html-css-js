@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+main #progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #6E78DE;
+  border-radius: 6px;
+}
+main header {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  background: #4B5AFF;
+}
+main header .sub-header {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: #ECECEC;
+  padding: 10px;
+}
+main header .sub-header .side-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main header .sub-header .side-icon i {
+  font-size: 26px;
+  color: #40414D;
+}
+main header .vertical-content {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 280px;
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  column-gap: 50px;
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 10px;
+}
+main header .vertical-content .container {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  background: #F8F8FF;
+  border-radius: 12px;
+}
+main header .vertical-content .container .circle-perfil {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  margin-top: 24px;
+  animation: pulse 2s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0;
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(239, 15, 46, .1);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(239, 15, 46, 1);
+  }
+}
+main header .vertical-content .container .circle-perfil#user_one {
+  background: url("users/user_one.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_two {
+  background: url("users/user_two.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_tree {
+  background: url("users/user_tree.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_fuor {
+  background: url("users/user_fuor.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_five {
+  background: url("users/user_five.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_six {
+  background: url("users/user_six.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_seven {
+  background: url("users/user_seven.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container .circle-perfil#user_eight {
+  background: url("users/user_eight.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main header .vertical-content .container input {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  padding: 10px 24px;
+  border-radius: 12px;
+  border: none;
+  background: #4755ED;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #fff;
+}
+main section.main-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 360px;
+  height: 345vh;
+}
+main section.main-container .container {
+  position: relative;
+  width: 100%;
+  height: 530px;
+}
+main section.main-container .container .header-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+main section.main-container .container .header-container .user-profile#demon_king {
+  width: 70px;
+  height: 70px;
+  background-image: url("users/user_one.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+main section.main-container .container .header-container .user-profile#demon_hunter {
+  width: 70px;
+  height: 70px;
+  background-image: url("users/user_eight.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+main section.main-container .container .header-container .user-profile#sombrio {
+  width: 70px;
+  height: 70px;
+  background-image: url("users/user_seven.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+main section.main-container .container .header-container .user-profile#demon_shadow {
+  width: 70px;
+  height: 70px;
+  background-image: url("users/user_tree.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+main section.main-container .container .header-container .user-profile#dead_light {
+  width: 70px;
+  height: 70px;
+  background-image: url("users/user_fuor.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+main section.main-container .container .header-container .perfil-name {
+  width: 180px;
+  height: 100%;
+  margin-left: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+main section.main-container .container .header-container .perfil-name .name {
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #46495F;
+}
+main section.main-container .container .header-container .perfil-name .sub-title {
+  font-size: 14px;
+  font-weight: bolder;
+  opacity: .5;
+  color: #000000;
+}
+main section.main-container .container .content-user {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 380px;
+}
+main section.main-container .container .content-user#image-for-user-one {
+  background: url("linhagens/dos_demonios/simbolo_demonios.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+main section.main-container .container .content-user#image-for-user-two {
+  background: url("linhagens/dos_demonios/simbolo_demonios.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+main section.main-container .container .content-user#image-for-user-tree {
+  background: url("linhagens/dos_cavaleiros/simbolo_cavaleiros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+main section.main-container .container .content-user#image-for-user-fuor {
+  background: url("linhagens/dos_demonios/simbolo_demonios.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+main section.main-container .container .content-user#image-for-user-five {
+  background: url("linhagens/dos_cavaleiros/simbolo_cavaleiros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+main section.main-container .container .footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section.main-container .container .footer-container .li-co-sh {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+main section.main-container .container .footer-container .li-co-sh i {
+  font-size: 22px;
+  color: #30313B;
+}
+main section.main-container .container .footer-container .li-co-sh i#heart:hover {
+  color: #F1184A;
+}
+main section.main-container .container .footer-container .save-it {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.main-container .container .footer-container .save-it i {
+  font-size: 22px;
+  color: #30313B;
+}
+main section.main-container .container .footer-container .save-it i#save:hover {
+  color: #FC1414;
+}
+body {
+  position: relative;
+  height: 400vh;
+  background-color: #EDEDED;
+}
